@@ -1,0 +1,31 @@
+void IDdel (struct student stu[])
+{
+	int i, number;
+	char ch;
+	printf ("删除学生信息记录。\n");
+	printf ("请输入学生的学号 ：");
+	scanf ("%d", &number);
+	for (i = 0; i < n; i++)
+	{
+		if (number == stu[i].number)
+		{
+			getchar ();
+			printf ("找到该生记录，如下所示 ：\n");
+			AA;
+			GG;
+			AA;
+			showID (stu, i);
+			printf ("是否删除？ (Y / N)\n");
+			scanf ("%c", &ch);
+			if (ch == 'Y' || ch == 'y')
+			{
+				for (; i < n; i++);
+				stu[i] = stu[i + 1];
+				n--;
+				printf("删除成功！\n");
+			}
+			return;
+		}
+	}
+	printf ("没有找到该生记录！");
+}
