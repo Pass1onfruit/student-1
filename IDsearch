@@ -1,0 +1,19 @@
+void IDsearch (struct student stu[])
+{
+	int i, number;
+	printf ("查找学生的信息记录。\n");
+	printf ("请输入学生学号 ：\n");
+	scanf ("%d", &number);
+	for (i = 0; i < n; i++)
+	{
+		if (number == stu[i].number)
+		{
+			printf ("找到该生的记录，如下所示 ：\n");
+
+			showALLL (stu, i);
+
+			return;
+		}
+	}
+	printf ("没有找到该生记录！\n");
+}
